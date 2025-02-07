@@ -10,3 +10,4 @@ Cheese = 0.5
 Peppers = 0.75
 Grilled_onions = 1
 Tax = 0.07
+Order = input(float("Please state your full order:"))
