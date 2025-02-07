@@ -8,16 +8,16 @@
 def categorize_age(age):
     ageCategory = "TBD"
     ######################
-    age = float(input("Enter the person's age: "))
+age = float(input("Enter the person's age: "))
 
-    if age >= 1:
-        print ("Infant")
-    elif age <1 and age <13:
-        print ("Child")
-    elif age <=13 and age <20:
-        print ("Teenager")
-    else:
-        print ("Adult")
+if age <= 1:
+    print ("Infant")
+elif age >1 and age <13:
+    print ("Child")
+elif age >=13 and age <20:
+    print ("Teenager")
+else:
+    print ("Adult")
 
 
 
@@ -25,7 +25,7 @@ def categorize_age(age):
 
     ######################
 
-    return ageCategory
+
 
 
     #### This piece of the code has been done for you,

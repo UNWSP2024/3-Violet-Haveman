@@ -13,20 +13,17 @@ def weight_conversion(weight):
     # Calculate the shipping charge.
     shippingCost = 0.0
     ######################
-    if weight >= 2:
-        shippingCost = 1.5
-    elif weight <2 and weight <6:
-        shippingCost = 3
-    elif weight <6 and weight <10:
-        shippingCost = 4
-    else:
-        weight_conversion(4.75)
 
-    # Get package weight from the user.
-    weight = float(input('Enter the weight of the package: '))
-    # Display the shipping charge.
-    shippingCost = weight_conversion(weight)
-    print('Shipping charge: $', format(shippingCost, '.2f'))
+    if weight <= 2:
+        print ("Shipping Cost = $ 1.5")
+    elif weight <2 and weight >6:
+        print ("Shipping Cost = $ 3.00")
+    elif weight <6 and weight <10:
+        print ("Shipping Cost = $ 4.00")
+    else:
+        print ("Shipping Cost = $ 4.75")
+
+
     ######################
     
     return shippingCost
